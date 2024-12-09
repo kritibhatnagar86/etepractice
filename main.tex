@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{makecell}
+
+\usepackage{array}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\newcolumntype{?}{!{\vrule width 2.5pt}}
+
+\title{kritiendsemprac}
+\author{KRITI BHATNAGAR}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\[ \left[ \frac {N} {\left( \frac {L}{P}\right) + (m+n) }\right] \]
+\begin{table}[h]
+    \centering
+    \scriptsize
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \hline
+    \multicolumn{2}{|c|}{Static Friction} & & \multicolumn{2}{|c|}{Sliding Friction}  \\
+    \cline{1-2}\cline{4-5}
+    dry and clean &lubricated& &dry and clean&lubricated\\
+    \hline 
+    \hline
+    0,15&0,111&steel&0.14&0.001\\
+    0.16&0.55&steel&0.18&0.001\\
+    \hline
+    \hline
+    \end{tabular}
+    \caption{complex example for handling tables}
+    \label{tab:my_label}
+\end{table}
+
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{|c|c|c|c|c?}
+ \cline{2-5}
+ \multicolumn{1}{c|}{ }&\multicolumn{4}{c|}{confusion matrix}\\
+  \cline{2-5}
+    \multicolumn{1}{c|}{ }&\multicolumn{4}{c|}{ Predicted}\\
+      \cline{2-5}
+
+    \multicolumn{1}{c|}{ }&category&0-1&2-10&11-200\\
+    \hline
+    \multirow{3}{*}{ Truth Data} &0-1&17964&2348&12344\\
+    \cline{2-5}
+    &0-1&17964&2348&12344\\
+    \cline{2-5}
+    &0-1&17964&2348&12344\\
+\Xhline{5\arrayrulewidth}
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[t]{0.3\linewidth}
+\includegraphics[width=\linewidth]{logo (1).jpg}
+\caption{Caption 1}
+\end{subfigure}
+\hspace{0.05\linewidth} % Adjust horizontal spacing
+\begin{subfigure}[t]{0.3\linewidth}
+\raisebox{3.7cm}{\includegraphics[width=\linewidth, angle=-180]{logo (1).jpg}}
+\caption{Caption 2}
+\end{subfigure}
+\caption{Main figure caption}
+\end{figure}
+
+%colours????
+
+\end{document}
